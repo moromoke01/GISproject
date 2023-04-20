@@ -1,0 +1,33 @@
+
+/* .container{
+    background: #090631;
+} */
+
+/* html, body{
+    display: grid;
+    height:100vh;
+    place-items: center;
+    
+} */
+body{
+    margin:auto;
+}
+.cont-box{
+    height: 80vh;
+    /* margin: auto; */
+    background: url('../Images/iStock-618335956-copy-e1559177464550.jpg');
+    display: flex;
+}
+.signup-form{
+ width: 30%;
+ height: 70vh;
+ margin-bottom: 2em;
+ border-radius: 1em;
+ margin: auto;
+ background: #fff;
+ padding: 20px;
+ box-shadow: 5px 5px 10px rgba(0,0, 0 ,0.15);
+ justify-content: center;
+ align-items: center;
+
+}

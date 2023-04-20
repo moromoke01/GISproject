@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Location-based website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        if(navigator.geolocation){
+          navigator.geolocation.getCurrentPosition(showPosition);
+        }else{
+          alert("Geolocation is not supported by this browser.");
+        }
+      });
+      
+      function showPosition(position){
+        var lat = position.coords.latitude;
+        var lng = position.coords.longitude;
+        $.ajax({
+          type: "POST",
+          url: "get_locations.php",
+          data: {lat: lat, lng: lng},
+          success: function(result){
+            $("#locations").html(result);
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Location-based website</h1>
+    <div id="locations">
+      <p>Retrieving locations based on your current location...</p>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Location based website</h1>
+        <div id="map"></div>
+        <script></script>
+
+        <script>
+            function initMap(){
+                //initialize map
+
+                var map
+            }
+        </script>
+    </div>
+</body>
+</html> -->
