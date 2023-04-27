@@ -21,8 +21,8 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
                  <ul >
-                            <li class="nav-item"><a class="nav-link" href="./index.php">Home</a> </li>      
-                            <li class="nav-item"><a class="nav-link" href="./public/ViewCentres.php"> View Centres</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.php">Home</a> </li>      
+                            <li class="nav-item"><a class="nav-link" href="../public/ViewCentres.php"> View Centres</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Help</a> </li>
                           
                             <li class="nav-item"><a class="nav-link" href="../public/About.php">About</a> </li>
