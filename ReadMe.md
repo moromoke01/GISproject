@@ -15,3 +15,5 @@
 	  `locationLongitude` VARCHAR(50) NOT NULL,
 	  `Id` INT(10) NOT NULL AUTO_INCREMENT,
 	  PRIMARY KEY (`Id`))";
+
+	  //search on google map, the latitude and longitude of any location to be added, you can enter from frontend or 'insert' option in database
