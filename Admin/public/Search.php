@@ -8,7 +8,7 @@ $geocode = json_decode($geocode, true);
 
 // Extract the latitude and longitude from the geocode response
 $lat = $geocode['results'][0]['geometry']['location']['lat'];
-$lng = $geocode['results'][0]['geometry']['location']['lng'];
+$lng = $geocode['results'][0]['geometry']['location']['log'];
 
 // Use the MySQL database to search for nearby locations
 $pdo = new PDO('mysql:host=localhost;dbname=YOUR_DB_NAME;charset=utf8', 'YOUR_DB_USERNAME', 'YOUR_DB_PASSWORD');

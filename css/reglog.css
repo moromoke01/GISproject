@@ -1,0 +1,65 @@
+
+body{
+    margin:auto;
+}
+.cont-box{
+    height: 88vh;
+    /* margin: auto; */
+    background: url('../Images/round-earth.jpg') no-repeat;
+    display: flex;
+}
+.form-box{
+ /* width: 30%; */
+ height: 78vh;
+ margin-bottom: 2em;
+ border-radius: 1em;
+ margin: auto;
+ background: #fff;
+ padding: 25px;
+ box-shadow: 5px 5px 10px rgba(0,0, 0 ,0.15);
+ 
+}
+.form-box button{
+    margin-left: 3em;
+}
+form{
+    padding: 1em;
+}
+
+.location-cont{
+    height: 80vh;
+    /* margin: auto; */
+    /* background: url('../Images/round-earth.jpg')  no-repeat; */
+    display: flex;
+    box-shadow: 2px 2px 25px 2px rgba(0,0, 0 ,0.15);
+}
+.side-shade{
+    background: url('../Images/ArcGIS.jpg');
+}
+
+.box{
+    /* background: #fffdfd; */
+    height: 60vh;
+    width: 90%; 
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    /* justify-items: center;
+    align-items: center;
+    align-content: center; */
+    /* color: #fff; */
+    
+}
+table {
+    width: 90%;
+    padding: 10px;
+}
+
+td, th{
+    padding: 10px;
+}
+
+#cont-shift{
+    margin-top: 1em;
+}

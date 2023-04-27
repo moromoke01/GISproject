@@ -1,3 +1,6 @@
+body{
+    margin: auto;
+}
 .box-inside{
     height:80vh;
     display: flex;
@@ -31,15 +34,33 @@ ul{
     margin: auto;
     display: flex;
     column-gap:3em;
+    text-decoration: none;
 }
 li{
     display: flex;
     flex-direction: column;
+    text-decoration: none;
     
 }
-li a{
+ .nav a{
     text-decoration: none;
+    color:#fff;
+}
+a:hover{
+    text-decoration: none;
+    color:aqua;
 }
 li i{
-    margin-left: 25em;
+    margin-left: 10em;
+}
+
+@media (max-width: 768px) {
+    img{
+        display: none;
+    }
+
+    .box-1{
+        background: url('../Images/layerstack.png') no-repeat center;
+        margin-left: 5px;
+    }
 }
